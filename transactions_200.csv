@@ -1,0 +1,2 @@
+﻿message-uuid;request-app-id;identificationType;identification;email;transactionDate;cantidadRegistros;comentario
+{{$randomUUID}};{{$randomUUID}};CC;1032360056;smolina@achcolombia.com.co;20252504;120;Happy pathc

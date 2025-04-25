@@ -1,0 +1,2 @@
+﻿message-uuid;request-app-id;cycleDate;cycleNumber;comentario
+{{$randomUUID}};{{$randomUUID}};20250425;1;Validar enviar vacio el campo message-uuid
