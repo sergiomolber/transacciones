@@ -1,0 +1,39 @@
+{
+	"id": "fea834db-b0a7-4535-970d-e6360e4a4090",
+	"name": "environment",
+	"values": [
+		{
+			"key": "client_id",
+			"value": "6d3fb0fef7f2ca8bd89c55472abc2921",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "client_secret",
+			"value": "f9832fc3755ecf26e8a2edbcb0ed0fc4",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "access_token",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "url_integra",
+			"value": "https://ab0306b7ba8f340d1805598023b8d04f-35e3dff869413b09.elb.us-east-1.amazonaws.com/ach-int/pib/v1/integra/closingOperatingCycle",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "url_rechazo",
+			"value": "https://ab0306b7ba8f340d1805598023b8d04f-35e3dff869413b09.elb.us-east-1.amazonaws.com/ach-int/pib/v1/integra/transactionsRejectedInCycles",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2025-05-08T14:13:26.997Z",
+	"_postman_exported_using": "Postman/11.43.2"
+}

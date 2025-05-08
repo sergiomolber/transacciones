@@ -1,0 +1,17 @@
+{
+    "Connection": "Keep-Alive",
+    "Transfer-Encoding": "chunked",
+    "User-Agent": "PostmanRuntime/7.39.0",
+    "Accept": "*/*",
+    "Postman-Token": "d97d69d6-ab47-423b-a9fd-ece8910a1e95",
+    "Accept-Encoding": "gzip, deflate, br",
+    "X-Client-IP": "172.31.255.238",
+    "X-Global-Transaction-ID": "434bd531681cc49a0006ef20",
+    "Content-Type": "application/json",
+    "Cache-Control": "no-store",
+    "Pragma": "no-cache",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "WWW-Authenticate": "Bearer error='invalid_scope'",
+    "Date": "Thu, 08 May 2025 14:50:02 GMT",
+    "Content-Encoding": "gzip"
+}

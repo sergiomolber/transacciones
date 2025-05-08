@@ -1,0 +1,13 @@
+{
+    "Connection": "Keep-Alive",
+    "Transfer-Encoding": "chunked",
+    "X-Original-HTTP-Status-Code": "500",
+    "Content-Type": "application/json;charset=utf-8",
+    "Server": "IBM App Connect Enterprise",
+    "Date": "Wed, 07 May 2025 23:54:35 GMT",
+    "Strict-Transport-Security": "max-age=31536000",
+    "X-Global-Transaction-ID": "434bd531681bf2bb00052080",
+    "X-RateLimit-Limit": "name=default,1;",
+    "X-RateLimit-Remaining": "name=default,0;",
+    "Content-Encoding": "gzip"
+}

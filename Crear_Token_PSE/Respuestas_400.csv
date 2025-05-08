@@ -1,0 +1,7 @@
+﻿scope,grant_type,comentario
+,client_credentials,Validar campo scope al enviarlo vacio
+null,client_credentials,Validar campo scope al enviarlo null
+Contadordecaracteres.com es un co,client_credentials,Validar campo scope al enviarlo incorrecto
+FEDERATE_DIRECTORY_KEY,,Validar campo grant_type al enviarlo vacio
+FEDERATE_DIRECTORY_KEY,null,Validar campo grant_type al enviarlo null
+FEDERATE_DIRECTORY_KEY,Contadordecaracteres.com es un co,Validar campo grant_type al enviarlo incorrecto

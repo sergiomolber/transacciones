@@ -1,0 +1,1 @@
+{"meta":{"messageUuid":"e22414c1-95fc-4dfe-b4d8-e8b684ee4591","requestDt":"2025-05-07T18:54:35.449Z","requestAppId":"94b507d8-6689-4abf-b280-5ce997e443e5"},"statusCode":400,"statusDesc":"Bad Request","errors":[{"code":"400","detail":"El campo: cycleDate no cumple con la definición. formato valido dd-mm-aaaa."}]}

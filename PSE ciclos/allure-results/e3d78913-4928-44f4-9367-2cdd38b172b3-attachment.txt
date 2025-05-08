@@ -1,0 +1,1 @@
+{"meta":{"messageUuid":"da5b05dd-08ec-42ed-92fc-9d89f413e85f","requestDt":"2025-05-07T18:54:36.194Z","requestAppId":"e1428b15-3612-4568-b55b-11cf09623ea3"},"statusCode":400,"statusDesc":"Bad Request","errors":[{"code":"400","detail":"El campo: cycleNumber no cumple con la definición."}]}

@@ -1,0 +1,1 @@
+{"error":{"code":118,"message":"\"bankAccountType\" must be one of [SVGS, CACC, DBMO, DBMI, DORD]"}}

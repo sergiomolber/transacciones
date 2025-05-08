@@ -1,0 +1,1 @@
+{"meta":{"messageUuid":"null","requestDt":"2025-05-07T18:54:34.441Z","requestAppId":"ee6fc899-9b01-499c-84c0-8f52aa52aa76"},"statusCode":400,"statusDesc":"Bad Request","errors":[{"code":"400","detail":"El campo: messageUuid no cumple con la definición."}]}

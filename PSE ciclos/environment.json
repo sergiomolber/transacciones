@@ -1,0 +1,33 @@
+{
+	"id": "fea834db-b0a7-4535-970d-e6360e4a4090",
+	"name": "environment",
+	"values": [
+		{
+			"key": "client_id",
+			"value": "36a50cb90f7f88f156e8228ece2a19d5",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "client_secret",
+			"value": "053cd2becb6e99bbd6a574cbe45eb8eb",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "access_token",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "url",
+			"value": "https://ab0306b7ba8f340d1805598023b8d04f-35e3dff869413b09.elb.us-east-1.amazonaws.com/ach-int/pib/v1/closingOperatingCycle",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2025-05-07T22:52:15.685Z",
+	"_postman_exported_using": "Postman/11.43.2"
+}

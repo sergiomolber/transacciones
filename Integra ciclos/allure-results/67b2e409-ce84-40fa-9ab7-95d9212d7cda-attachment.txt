@@ -1,0 +1,1 @@
+{"httpCode":"500","httpMessage":"Internal Server Error","moreInformation":"El campo: messageUuid no cumple con la definición."}

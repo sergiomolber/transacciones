@@ -1,0 +1,2 @@
+﻿message-uuid;request-app-id;identificationType;identification;email;comentario
+{{$randomUUID}};{{$randomUUID}};CC;1032360056;smolina@achcolombia.com.co;Validar enviar vacio el campo message-uuid

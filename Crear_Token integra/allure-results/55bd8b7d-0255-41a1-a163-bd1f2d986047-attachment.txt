@@ -1,0 +1,1 @@
+{"error":"invalid_scope","error_description":"Missing scope in the request"}

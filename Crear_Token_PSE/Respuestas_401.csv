@@ -1,0 +1,9 @@
+﻿client-id,client-secret,comentario
+,3aaef6b22a2e6c3c02e361d60db39aa0,Validar campo clientId al enviarlo vacio
+null,3aaef6b22a2e6c3c02e361d60db39aa0,Validar campo clientId al enviarlo null
+Contadordecaracteres.com es un co,3aaef6b22a2e6c3c02e361d60db39aa0,Validar campo clientId al enviarlo incorrecto
+amnerosldmetalsmeudmjet3uj4j5ms7485j,3aaef6b22a2e6c3c02e361d60db39aa0,Validar campo clientId al enviarlo con mas de 32 caracteres
+73cd505c2a470195b66dd32323bd5a96,,Validar campo clientSecret al enviarlo vacio
+73cd505c2a470195b66dd32323bd5a96,null,Validar campo clientSecret al enviarlo null
+73cd505c2a470195b66dd32323bd5a96,Contadordecaracteres.com es un co,Validar campo clientSecret al enviarlo incorrecto
+73cd505c2a470195b66dd32323bd5a96,amnerosldmetalsmeudmjet3uj4j5ms7485j,Validar campo clientSecret al enviarlo con mas de 32 caracteres

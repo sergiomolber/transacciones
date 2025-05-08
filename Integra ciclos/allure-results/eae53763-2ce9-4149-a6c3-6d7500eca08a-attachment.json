@@ -1,0 +1,12 @@
+{
+    "message-uuid": "7d0fb8c5-9d2f-4394-93a3-df05b3ae25cd",
+    "request-app-id": "251ba6a7-bd4a-4dde-9415-22f8afcb5b73",
+    "Accept": "application/json",
+    "Authorization": "Bearer AAIgNmQzZmIwZmVmN2YyY2E4YmQ4OWM1NTQ3MmFiYzI5MjGCPBSSc8CXrg6NdkdivaAJicL4zaic7B-IIULgkK0_SWYo-yhQT68wuAz2FGJ4HutkCNBds_0nf_fsEj7dwwCXDWVe-lIa64ai-LNl1DPvlZhf3p6VMlHnZLhbvtk1-swv_0E75YStJI7hu1KN58po",
+    "User-Agent": "PostmanRuntime/7.39.0",
+    "Cache-Control": "no-cache",
+    "Postman-Token": "0ad4ebda-aa29-4317-b25a-a2dbd26cbf01",
+    "Host": "ab0306b7ba8f340d1805598023b8d04f-35e3dff869413b09.elb.us-east-1.amazonaws.com",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive"
+}

@@ -1,0 +1,21 @@
+{
+    "labels": {
+    "aliasType": "PHONE",
+    "aliasValue": "3871981596",
+     "type": "PERSON",
+     "firstName": "CARLOS",
+     "secondName": "ANDRES",
+     "lastName": null,
+     "secondLastName": "MOLINA",
+     "proprietary": "PPT",
+     "identification": "825595406689073",
+     "bankAccountType": "SVGS",
+     "bankAccountNumber": "0692670587062984936193903835427696",
+     "routerReference": "$bancorojo",
+     "targetSpbviCode": "TFY",
+     "bankId": "900504001",
+     "consented": "2025-04-22T13:35:32.143-05:00",
+     "received": "2025-04-22T13:35:32.143-05:00",
+     "dispatched":"2025-04-22T13:35:32.143-05:00"
+   }
+}

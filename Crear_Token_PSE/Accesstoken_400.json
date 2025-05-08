@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "12172cfd-9686-476a-bc52-02dbae6fe003",
+		"name": "Crear access errores 400",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29460625",
+		"_collection_link": "https://red-satellite-829132.postman.co/workspace/transacciones~00b63b4c-b002-48f6-b4f2-d9d38b619dc5/collection/29460625-12172cfd-9686-476a-bc52-02dbae6fe003?action=share&source=collection_link&creator=29460625"
+	},
+	"item": [
+		{
+			"name": "Generar Token Error_400 PSE",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Captura la respuesta en formato JSON\r",
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"var jsonData = pm.response.json();\r",
+							"\r",
+							"// Guarda el access_token en una variable global\r",
+							"pm.globals.set(\"access_token\", jsonData.access_token);\r",
+							"// Imprimir el comentario en la consola de Newman\r",
+							"console.log(\"Comentario del caso de prueba: \", pm.iterationData.get(\"comentario\"));"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "{{client_id}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "{{scope}}",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "{{grant_type}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url_token}}/oauth2/token",
+					"host": [
+						"{{url_token}}"
+					],
+					"path": [
+						"oauth2",
+						"token"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://directoriofederado.crt.transfiya.com.co/ach/tx/oauth2/token' \\\r\n--header 'Content-Type: application/x-www-form-urlencoded' \\\r\n--data-urlencode 'client_id=ff2fc626be69b62f55c346c00305ecb4' \\\r\n--data-urlencode 'client_secret=b4f63694b8250e977713838ad1b46f32' \\\r\n--data-urlencode 'scope=FEDERATE_DIRECTORY_KEY' \\\r\n--data-urlencode 'grant_type=client_credentials'"
+			},
+			"response": []
+		}
+	]
+}

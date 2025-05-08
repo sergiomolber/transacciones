@@ -1,0 +1,13 @@
+﻿message-uuid,request-app-id,cycleDate,cycleNumber,comentario
+,{{$randomUUID}},2025/05/05,1,Validar enviar vacio el campo message-uuid
+null,{{$randomUUID}},2025/05/05,1,Validar enviar  null el campo message-uuid
+c8fe81ea-142a-4343-b293-1f212cae6a883,{{$randomUUID}},2025/05/05,1,Validar longitud del campo message-uuid
+{{$randomUUID}},,2025/05/05,1,Validar enviar vacio el campo request-app-id
+{{$randomUUID}},null,2025/05/05,1,Validar enviar  null el campo request-app-id
+{{$randomUUID}},c8fe81ea-142a-4343-b293-1f212cae6a883,2025/05/05,1,Validar longitud del campo request-app-id
+{{$randomUUID}},{{$randomUUID}},,1,Validar enviar vacio el campo cycleDate  
+{{$randomUUID}},{{$randomUUID}},null,1,Validar enviar  null el campo cycleDate  
+{{$randomUUID}},{{$randomUUID}},2025/05/051,1,Validar longitud del campo cycleDate  
+{{$randomUUID}},{{$randomUUID}},2025/05/05,,Validar enviar vacio el campo cycleNumber  
+{{$randomUUID}},{{$randomUUID}},2025/05/05,null,Validar enviar  null el campo cycleNumber  
+{{$randomUUID}},{{$randomUUID}},2025/05/05,fdfldflds,Validar longitud del campo cycleNumber  

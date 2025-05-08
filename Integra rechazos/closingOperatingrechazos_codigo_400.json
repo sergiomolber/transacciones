@@ -1,0 +1,315 @@
+{
+	"info": {
+		"_postman_id": "f5711f6d-a77f-41bc-9999-0167f26fac5b",
+		"name": "closingOperatingCycle integra rechazos codigo 400",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29460625",
+		"_collection_link": "https://red-satellite-829132.postman.co/workspace/transacciones~00b63b4c-b002-48f6-b4f2-d9d38b619dc5/collection/29460625-f5711f6d-a77f-41bc-9999-0167f26fac5b?action=share&source=collection_link&creator=29460625"
+	},
+	"item": [
+		{
+			"name": "Get closing of operating cycle 400 rechazos integra",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"// Imprimir el comentario en la consola de Newman\r",
+							"console.log(\"Comentario del caso de prueba: \", pm.iterationData.get(\"comentario\"));"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "message-uuid",
+						"value": "{{message-uuid}}",
+						"description": "(Required) Message identifier is used for traceability. This identifier allows you to identify the logs of the calls to the APIs in the log repositories, it is recommended to send a UUID for this value. Example: c4e6bd04-5149-11e7-b114-12654765af2f."
+					},
+					{
+						"key": "request-app-id",
+						"value": "{{request-app-id}}",
+						"description": "(Required) Message identifier is used for traceability. This identifier allows you to identify the logs of the calls to the APIs in the log repositories, it is recommended to send a UUID for this value. Example: c4e6bd04-5149-11e7-b114-12654765af2f."
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{url_rechazo}}?cycleDate={{cycleDate}}&cycleNumber={{cycleNumber}}",
+					"host": [
+						"{{url_rechazo}}"
+					],
+					"query": [
+						{
+							"key": "cycleDate",
+							"value": "{{cycleDate}}"
+						},
+						{
+							"key": "cycleNumber",
+							"value": "{{cycleNumber}}"
+						}
+					]
+				},
+				"description": "GET closing of operating cycle. "
+			},
+			"response": [
+				{
+					"name": "Success get roles modules response.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "message-uuid",
+								"value": "<uuid>",
+								"description": "(Required) Message identifier is used for traceability. This identifier allows you to identify the logs of the calls to the APIs in the log repositories, it is recommended to send a UUID for this value. Example: c4e6bd04-5149-11e7-b114-12654765af2f."
+							},
+							{
+								"key": "request-app-id",
+								"value": "<uuid>",
+								"description": "(Required) Message identifier is used for traceability. This identifier allows you to identify the logs of the calls to the APIs in the log repositories, it is recommended to send a UUID for this value. Example: c4e6bd04-5149-11e7-b114-12654765af2f."
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "<token>",
+								"description": "Added as a part of security scheme: oauth2"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/closingOperatingCycle?cycleDate=<date>&cycleNumber=<integer>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"closingOperatingCycle"
+							],
+							"query": [
+								{
+									"key": "cycleDate",
+									"value": "<date>",
+									"description": "(Required) Fecha de ciclo con Formato: dd/mm/aaaa"
+								},
+								{
+									"key": "cycleNumber",
+									"value": "<integer>",
+									"description": "(Required) Detalla el ciclo en proceso"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"meta\": {\n    \"messageUuid\": \"<string>\",\n    \"requestDt\": \"<dateTime>\",\n    \"requestAppId\": \"<string>\"\n  },\n  \"statusCode\": \"<number>\",\n  \"statusDesc\": \"<string>\",\n  \"data\": {\n    \"closingOperatingCycle\": {\n      \"cycleNumber\": \"<integer>\",\n      \"stateProcessingCycle\": \"<integer>\"\n    }\n  }\n}"
+				},
+				{
+					"name": "Bad request or mal formatted data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "message-uuid",
+								"value": "<uuid>",
+								"description": "(Required) Message identifier is used for traceability. This identifier allows you to identify the logs of the calls to the APIs in the log repositories, it is recommended to send a UUID for this value. Example: c4e6bd04-5149-11e7-b114-12654765af2f."
+							},
+							{
+								"key": "request-app-id",
+								"value": "<uuid>",
+								"description": "(Required) Message identifier is used for traceability. This identifier allows you to identify the logs of the calls to the APIs in the log repositories, it is recommended to send a UUID for this value. Example: c4e6bd04-5149-11e7-b114-12654765af2f."
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "<token>",
+								"description": "Added as a part of security scheme: oauth2"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/closingOperatingCycle?cycleDate=<date>&cycleNumber=<integer>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"closingOperatingCycle"
+							],
+							"query": [
+								{
+									"key": "cycleDate",
+									"value": "<date>",
+									"description": "(Required) Fecha de ciclo con Formato: dd/mm/aaaa"
+								},
+								{
+									"key": "cycleNumber",
+									"value": "<integer>",
+									"description": "(Required) Detalla el ciclo en proceso"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"meta\": {\n    \"messageUuid\": \"<string>\",\n    \"requestDt\": \"<dateTime>\",\n    \"requestAppId\": \"<string>\"\n  },\n  \"statusCode\": \"<number>\",\n  \"statusDesc\": \"<string>\",\n  \"errors\": [\n    {\n      \"code\": \"<string>\",\n      \"detail\": \"<string>\"\n    },\n    {\n      \"code\": \"<string>\",\n      \"detail\": \"<string>\"\n    }\n  ]\n}"
+				},
+				{
+					"name": "Bad request or mal formatted data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "message-uuid",
+								"value": "<uuid>",
+								"description": "(Required) Message identifier is used for traceability. This identifier allows you to identify the logs of the calls to the APIs in the log repositories, it is recommended to send a UUID for this value. Example: c4e6bd04-5149-11e7-b114-12654765af2f."
+							},
+							{
+								"key": "request-app-id",
+								"value": "<uuid>",
+								"description": "(Required) Message identifier is used for traceability. This identifier allows you to identify the logs of the calls to the APIs in the log repositories, it is recommended to send a UUID for this value. Example: c4e6bd04-5149-11e7-b114-12654765af2f."
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "<token>",
+								"description": "Added as a part of security scheme: oauth2"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/closingOperatingCycle?cycleDate=<date>&cycleNumber=<integer>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"closingOperatingCycle"
+							],
+							"query": [
+								{
+									"key": "cycleDate",
+									"value": "<date>",
+									"description": "(Required) Fecha de ciclo con Formato: dd/mm/aaaa"
+								},
+								{
+									"key": "cycleNumber",
+									"value": "<integer>",
+									"description": "(Required) Detalla el ciclo en proceso"
+								}
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"httpCode\": \"<string>\",\n  \"httpMessage\": \"<string>\",\n  \"moreInformation\": \"<string>\"\n}"
+				},
+				{
+					"name": "Internal Server Error.",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "message-uuid",
+								"value": "<uuid>",
+								"description": "(Required) Message identifier is used for traceability. This identifier allows you to identify the logs of the calls to the APIs in the log repositories, it is recommended to send a UUID for this value. Example: c4e6bd04-5149-11e7-b114-12654765af2f."
+							},
+							{
+								"key": "request-app-id",
+								"value": "<uuid>",
+								"description": "(Required) Message identifier is used for traceability. This identifier allows you to identify the logs of the calls to the APIs in the log repositories, it is recommended to send a UUID for this value. Example: c4e6bd04-5149-11e7-b114-12654765af2f."
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "<token>",
+								"description": "Added as a part of security scheme: oauth2"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/closingOperatingCycle?cycleDate=<date>&cycleNumber=<integer>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"closingOperatingCycle"
+							],
+							"query": [
+								{
+									"key": "cycleDate",
+									"value": "<date>",
+									"description": "(Required) Fecha de ciclo con Formato: dd/mm/aaaa"
+								},
+								{
+									"key": "cycleNumber",
+									"value": "<integer>",
+									"description": "(Required) Detalla el ciclo en proceso"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"meta\": {\n    \"messageUuid\": \"<string>\",\n    \"requestDt\": \"<dateTime>\",\n    \"requestAppId\": \"<string>\"\n  },\n  \"statusCode\": \"<number>\",\n  \"statusDesc\": \"<string>\",\n  \"errors\": [\n    {\n      \"code\": \"<string>\",\n      \"detail\": \"<string>\"\n    },\n    {\n      \"code\": \"<string>\",\n      \"detail\": \"<string>\"\n    }\n  ]\n}"
+				}
+			]
+		}
+	]
+}

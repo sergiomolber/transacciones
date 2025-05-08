@@ -1,0 +1,1 @@
+{"error":{"code":118,"message":"\"targetSpbviCode\" must be one of [TFY, ENT, CRB, VIS, SRV]"}}

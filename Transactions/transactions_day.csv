@@ -1,0 +1,16 @@
+﻿message-uuid;request-app-id;identificationType;identification;email;comentario
+;{{$randomUUID}};CC;1032360056;smolina@achcolombia.com.co;Validar enviar vacio el campo message-uuid
+null;{{$randomUUID}};CC;1032360056;smolina@achcolombia.com.co;Validar enviar  null el campo message-uuid
+c8fe81ea-142a-4343-b293-1f212cae6a883;{{$randomUUID}};CC;1032360056;smolina@achcolombia.com.co;Validar longitud del campo message-uuid
+{{$randomUUID}};;CC;1032360056;smolina@achcolombia.com.co;Validar enviar vacio el campo request-app-id
+{{$randomUUID}};null;CC;1032360056;smolina@achcolombia.com.co;Validar enviar  null el campo request-app-id
+{{$randomUUID}};c8fe81ea-142a-4343-b293-1f212cae6a883;CC;1032360056;smolina@achcolombia.com.co;Validar longitud del campo request-app-id
+{{$randomUUID}};{{$randomUUID}};;1032360056;smolina@achcolombia.com.co;Validar enviar vacio el campo identificationType 
+{{$randomUUID}};{{$randomUUID}};null;1032360056;smolina@achcolombia.com.co;Validar enviar  null el campo identificationType 
+{{$randomUUID}};{{$randomUUID}};VG;1032360056;smolina@achcolombia.com.co;Validar longitud del campo identificationType 
+{{$randomUUID}};{{$randomUUID}};;;smolina@achcolombia.com.co;Validar enviar vacio el campo identification
+{{$randomUUID}};{{$randomUUID}};;null;smolina@achcolombia.com.co;Validar enviar  null el campo identification
+{{$randomUUID}};{{$randomUUID}};;fdfldflds;smolina@achcolombia.com.co;Validar longitud del campo identification
+{{$randomUUID}};{{$randomUUID}};;1032360056;;Validar enviar vacio el campo email
+{{$randomUUID}};{{$randomUUID}};;1032360056;null;Validar enviar  null el campo email
+{{$randomUUID}};{{$randomUUID}};;1032360056;smolina@%&&%2322achcolombia.com.co;Validar longitud del campo email

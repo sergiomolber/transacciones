@@ -1,0 +1,34 @@
+{
+	"id": "37a207bf-3d5a-4c42-873e-7a9675a7896f",
+	"values": [
+		{
+			"key": "url_token",
+			"value": "https://ab0306b7ba8f340d1805598023b8d04f-35e3dff869413b09.elb.us-east-1.amazonaws.com/ach-int/pib/pse_sec",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "client_id",
+			"value": "36a50cb90f7f88f156e8228ece2a19d5",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "client_secret",
+			"value": "053cd2becb6e99bbd6a574cbe45eb8eb",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "access_token",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+		
+	],
+	"name": "Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2024-10-10T19:47:44.972Z",
+	"_postman_exported_using": "Postman/11.16.0"
+}

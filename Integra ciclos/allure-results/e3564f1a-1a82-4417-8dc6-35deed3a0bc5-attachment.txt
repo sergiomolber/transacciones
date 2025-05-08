@@ -1,0 +1,6 @@
+pm.test("Status code is 400", function () {
+    pm.response.to.have.status(400);
+});
+
+// Imprimir el comentario en la consola de Newman
+console.log("Comentario del caso de prueba: ", pm.iterationData.get("comentario"));

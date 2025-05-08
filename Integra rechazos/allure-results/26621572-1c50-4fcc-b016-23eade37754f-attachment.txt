@@ -1,0 +1,3 @@
+level: warn, messages: Using "_" is deprecated. Use "require('lodash')" instead.
+level: log, messages: Identificación generada:,983516335634024
+level: log, messages: Comentario del caso de prueba: ,Validar enviarlo con valor null  del campo received para la creacion de un llave R101

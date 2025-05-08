@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "9cc634eb-c57a-4445-93e6-63885a173db2",
+		"name": "Generar token",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29460625",
+		"_collection_link": "https://red-satellite-829132.postman.co/workspace/transacciones~00b63b4c-b002-48f6-b4f2-d9d38b619dc5/collection/29460625-9cc634eb-c57a-4445-93e6-63885a173db2?action=share&source=collection_link&creator=29460625"
+	},
+	"item": [
+		{
+			"name": "Generar Token INTEGRA",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Captura la respuesta en formato JSON\r",
+							"var jsonData = pm.response.json();\r",
+							"\r",
+							"// Guarda el access_token en una variable local\r",
+							"pm.environment.set(\"access_token\", jsonData.access_token);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "{{client_id}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "transactions.read",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ab0306b7ba8f340d1805598023b8d04f-35e3dff869413b09.elb.us-east-1.amazonaws.com/ach-int/pib/intgr_sec/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"ab0306b7ba8f340d1805598023b8d04f-35e3dff869413b09",
+						"elb",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"ach-int",
+						"pib",
+						"intgr_sec",
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

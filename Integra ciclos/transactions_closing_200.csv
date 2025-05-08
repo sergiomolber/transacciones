@@ -1,0 +1,2 @@
+﻿message-uuid,request-app-id,cycleDate,cycleNumber,comentario
+{{$randomUUID}},{{$randomUUID}},2025/05/05,1,Validar happy pathc

@@ -1,0 +1,27 @@
+{
+	"id": "fea834db-b0a7-4535-970d-e6360e4a4090",
+	"name": "environment",
+	"values": [
+		{
+			"key": "client_id",
+			"value": "130fb45b375c1836b602a45d1b18fa49",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "client_secret",
+			"value": "02b96f59fa463de4b1281927fd9dfcb5",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "access_token",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2025-04-30T17:42:01.666Z",
+	"_postman_exported_using": "Postman/11.43.2"
+}

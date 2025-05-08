@@ -1,0 +1,34 @@
+{
+  "_": {
+    "postman_variable_scope": "environment",
+    "postman_exported_at": "2025-05-07T22:52:15.685Z",
+    "postman_exported_using": "Postman/11.43.2"
+  },
+  "id": "fea834db-b0a7-4535-970d-e6360e4a4090",
+  "name": "environment",
+  "values": [
+    {
+      "type": "any",
+      "value": "36a50cb90f7f88f156e8228ece2a19d5",
+      "key": "client_id"
+    },
+    {
+      "type": "any",
+      "value": "053cd2becb6e99bbd6a574cbe45eb8eb",
+      "key": "client_secret"
+    },
+    {
+      "type": "any",
+      "value": "AAIgMzZhNTBjYjkwZjdmODhmMTU2ZTgyMjhlY2UyYTE5ZDVs0Pudojshh8RaPbg9W5zZXvDtoNkUpWNVIZeOshfsEZve3emkjkp85gVSzaeas2nnSmTCsJt-OXWmVmIEOii4-Cv6RleRYXROv2-LfxJBgKbRiaLQXiWZo1-9bzFgEumy_CP7jrcm3iZgzSZBH_-j",
+      "key": "access_token"
+    },
+    {
+      "type": "any",
+      "value": "https://ab0306b7ba8f340d1805598023b8d04f-35e3dff869413b09.elb.us-east-1.amazonaws.com/ach-int/pib/v1/closingOperatingCycle",
+      "key": "url"
+    }
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2025-05-07T23:54:27.760Z",
+  "_postman_exported_using": "Newman/6.1.3"
+}

@@ -1,0 +1,5 @@
+// Captura la respuesta en formato JSON
+var jsonData = pm.response.json();
+
+// Guarda el access_token en una variable local
+pm.environment.set("access_token", jsonData.access_token);

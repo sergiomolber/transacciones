@@ -1,0 +1,132 @@
+const randomCel = _.random(3102047071,3992047071)
+pm.variables.set("randomCel", randomCel );
+// Genera un valor aleatorio
+let randomValue = Math.random();
+
+// Generar número aleatorio de 12 dígitos
+let identificacion = Math.floor(Math.random() * 9e11 + 1e11).toString() + Math.floor(Math.random() * 1e3).toString().padStart(3, '0');
+
+// Guardar como variable de entorno
+pm.environment.set("identificacion", identificacion);
+
+console.log("Identificación generada:", identificacion);
+
+// Generar una parte aleatoria para el nombre del correo
+function generateRandomString(length) {
+    const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+    let result = '';
+    for (let i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    return result;
+}
+
+// Configurar el dominio del correo
+const domain = 'example.com'; // Cambia este dominio si necesitas otro
+const randomLocalPart = generateRandomString(8); // Parte local del correo (antes del @)
+
+// Generar el correo completo
+const randomEmail = `${randomLocalPart}@${domain}`;
+
+// Guardar el correo en variables de entorno o colección
+pm.environment.set('randomEmail', randomEmail);
+
+
+
+
+// Generar una cadena aleatoria de 10 caracteres para el campo ALFANUMERICO
+function generateRandomString(length) {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let result = '';
+    for (let i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    return result;
+}
+
+// Crear la variable
+const alfanumerico = `@${generateRandomString(10)}`;
+pm.environment.set('alfanumerico', alfanumerico);
+
+
+
+
+// Generar una cadena de 8 dígitos aleatorios para el campo MERCHANTID
+function generateRandomDigits(length) {
+    let result = '';
+    for (let i = 0; i < length; i++) {
+        result += Math.floor(Math.random() * 10); // Generar un dígito aleatorio entre 0 y 9
+    }
+    return result;
+}
+
+// Crear la variable con prefijo '00'
+const merchant = `00${generateRandomDigits(8)}`;
+pm.environment.set('merchant', merchant);
+
+
+
+// Función para generar una cadena aleatoria de dígitos de longitud especificada para el campo NUMERO DE CUENTA
+function generateRandomNumericString(length) {
+    const charset = '0123456789';  // Conjunto de caracteres numéricos
+    let randomString = '';
+    for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * charset.length);
+        randomString += charset[randomIndex];
+    }
+    return randomString;
+}
+
+// Genera un valor aleatorio de 34 dígitos
+const randomNumericValue = generateRandomNumericString(34);
+
+// Establece el valor aleatorio en una variable
+pm.variables.set("randomNumericValue", randomNumericValue);
+
+
+//OBTENER FECHA ACTUAL
+const date = new Date();
+ 
+// Obtener componentes con ceros a la izquierda
+function pad(num, size = 2) {
+    return ('00' + num).slice(-size);
+}
+ 
+// Obtener la zona horaria en formato -05:00
+function getTimeZoneOffset(date) {
+    const offset = -date.getTimezoneOffset(); // en minutos
+    const sign = offset >= 0 ? '+' : '-';
+    const hours = pad(Math.floor(Math.abs(offset) / 60));
+    const minutes = pad(Math.abs(offset) % 60);
+    return `${sign}${hours}:${minutes}`;
+}
+ 
+const isoDate = `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}T${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}.${pad(date.getMilliseconds(), 3)}${getTimeZoneOffset(date)}`;
+ 
+pm.environment.set("fecha_actual_formato_iso", isoDate);
+
+
+
+pm.sendRequest({
+    url: 'https://ach-minka-stg.transferenciasinmediatas.com/oauth/token',
+    method: 'POST',
+    header: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: {
+        mode: 'urlencoded',
+        urlencoded: [
+            { key: 'grant_type', value: 'client_credentials' },
+            { key: 'client_id', value: pm.environment.get("client_id") },
+            { key: 'client_secret', value: pm.environment.get("client_secret") },
+            { key: 'audience', value: pm.environment.get("audience") } // opcional según el proveedor
+        ]
+    }
+}, function (err, res) {
+    if (err) {
+        console.log("Error al obtener el token:", err);
+    } else {
+        let token = res.json().access_token;
+        pm.environment.set("access_token", token);
+    }
+});
