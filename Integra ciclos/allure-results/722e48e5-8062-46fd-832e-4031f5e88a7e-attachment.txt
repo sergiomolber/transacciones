@@ -1,0 +1,1 @@
+{"meta":{"messageUuid":"d19554de-6e90-45ec-9b84-bc05ed2b86c8","requestDt":"2025-05-08 17:25:29.809697","requestAppId":"6d3fb0fef7f2ca8bd89c55472abc2921","statusCode":200,"statusDesc":"OK."},"data":{"closingOperatingCycle":{"cycleNumber":1,"EndTime":"2025\/05\/06","Status":"CLOSED","StateLiberationArchive":"OK"}}}
