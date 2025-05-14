@@ -1,2 +1,3 @@
 ﻿message-uuid,request-app-id,cycleDate,cycleNumber,comentario
-{{$randomUUID}},{{$randomUUID}},05/06/2025,1,Validar enviar vacio el campo message-uuid
+{{$randomUUID}},{{$randomUUID}},13/05/2025,1,Validar enviar vacio el campo message-uuid
+{{$randomUUID}},{{$randomUUID}},13/05/2025,2,Validar enviar vacio el campo message-uuid
